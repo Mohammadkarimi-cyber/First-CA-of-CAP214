@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Register</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            text-transform: uppercase;
+            color: #1641a3;
+            padding: 2rem;
+            position: relative;
+            background-color: #f6f6f6;
+            height: 15vh;
+            z-index: 2;
+
+            clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+        }
+
+        .logo {
+            height: 4rem;
+            position: absolute;
+            top: 50%;
+            left: 2rem;
+            transform: translateY(-50%);
+        }
+
+        .main {
+            background-image: linear-gradient(to bottom right, rgba(61, 97, 182, 0.8), rgb(2, 22, 69)), url(main-back.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            transform: translateY(-50px);
+            position: relative;
+            height: 90vh;
+            z-index: 1;
+        }
+
+        .form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(225, 225, 225, 0.5);
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+        }
+
+        input {
+            display: inline-block;
+            width: 15rem;
+            height: 2rem;
+            margin-bottom: 1.2rem;
+
+        }
+        .mem { width: 1rem; height: 1rem; margin: 1rem; }
+
+        input:focus {
+            outline: none;
+        }
+
+        button {
+            background-color: #2655c2;
+            padding: .5rem 1.5rem;
+            border: 0;
+            margin-left: 5.1rem;
+            margin-top: 1rem;
+            border-radius: .4rem;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer {
+            height: 12vh;
+            background-color: #f6f6f6;
+            transform: translateY(-6rem);
+            position: relative;
+            z-index: 0;
+        }
+
+        .copy {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: #777;
+        }
+        .sel { width: 8rem; margin-bottom: 1rem; }
+        h1 {
+            text-transform: uppercase;
+            color: #1641a3;
+            margin: auto auto 1rem 4rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo.png" alt="logo" class="logo">
+        <h1>maruti suzuki arena</h1>
+    </div>
+
+    <section class="main">
+        <div class="form">
+            <h1>Details</h1>
+            <form action="#">
+                <input type="text" placeholder="Name of product" required> <br>
+                Do you have membership? <br>
+                <input type="radio" name="mem" class="mem" required checked>Yes
+                <input type="radio" name="mem" class="mem" readonly>No <br>
+                <select name="models" class="sel" required>
+                    <option value="Dzire">Choose</option>
+                    <option value="Dzire">New</option>
+                    <option value="Dzire">Used</option>
+                </select> <br>
+                <select name="model" class="sel1" required>
+                    <option value="Title">Choose the model.</option>
+                    <option value="Dzire">Maruti suzuki Dzire</option>
+                    <option value="XL6">Maruti suzuki XL6</option>
+                    <option value="S-Presso">Maruti suzuki S-Presso</option>
+                    <option value="Dzire">Maruti suzuki Dzire</option>
+                </select> <br>
+                <button><a href="#">Submit</a></button>
+            </form>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p class="copy">Built by Mohammad Karimi for Maruti Suzuki. Copyright &copy; by Maruti Suziki.</p>
+    </div>
+</body></html>

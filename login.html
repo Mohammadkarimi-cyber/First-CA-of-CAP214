@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Login</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            text-transform: uppercase;
+            color: #1641a3;
+            padding: 2rem;
+            position: relative;
+            background-color: #f6f6f6;
+            height: 20vh;
+            z-index: 2;
+
+            clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+        }
+
+        .logo {
+            height: 4rem;
+            position: absolute;
+            top: 50%;
+            left: 2rem;
+            transform: translateY(-50%);
+        }
+
+        .main {
+            background-image: linear-gradient(to bottom right, rgba(61, 97, 182, 0.8), rgb(2, 22, 69)), url(main-back.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            transform: translateY(-50px);
+            position: relative;
+            height: 80vh;
+            z-index: 1;
+
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(225, 225, 225, 0.5);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+        }
+
+        input {
+            display: block;
+            width: 15rem;
+            height: 2rem;
+            margin-bottom: 2rem;
+
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        button {
+            background-color: #2655c2;
+            padding: .5rem 1.5rem;
+            border: 0;
+            margin-left: 5.1rem;
+            margin-top: 1rem;
+            border-radius: .4rem;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer {
+            height: 25vh;
+            background-color: #f6f6f6;
+            transform: translateY(-8rem);
+            position: relative;
+        }
+
+        .copy {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo.png" alt="logo" class="logo">
+        <h1>maruti suzuki arena</h1>
+    </div>
+
+    <section class="main">
+        <div class="form">
+            <form action="#">
+                <input type="text" placeholder="User Name" required>
+                <input type="password" placeholder="Password" required>
+                <button><a href="main%20page.html">Login</a></button>
+            </form>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p class="copy">Built by Mohammad Karimi for Maruti Suzuki. Copyright &copy; by Maruti Suziki.</p>
+    </div>
+</body></html>

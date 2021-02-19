@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>main page</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body { overflow: hidden; }
+            .header {
+                text-align: center;
+                text-transform: uppercase;
+                color: #1641a3;
+                padding: 2rem;
+                position: relative;
+                background-color: #f6f6f6;
+                height: 20vh;
+                z-index: 2;
+                
+                clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+            }
+            .logo {
+                height: 4rem;
+                position: absolute;
+                top: 50%;
+                left: 2rem;
+                transform: translateY(-50%);
+            }
+            .main {
+                background-color: #000;
+                height: 75vh;
+                transform: translateY(-2.6rem);
+            }
+        </style>
+    </head>
+    <frameset rows = "20%,70%,*" border="0" framespacing="0">
+      <frame name = "heading" src = "heading.html" noresize="noresize" scrolling="no">
+      <frameset cols="20%, 60%, 20%">
+          <frame name="links" src="links.html" noresize="noresize" scrolling="no">
+          <frame name="display" src="display.html" noresize="noresize" scrolling="no">
+          <frame name="announce" src="announce.html" noresize="noresize" scrolling="no">
+      </frameset>
+      <frame name = "footing" src = "footing.html" noresize="noresize"  scrolling="no">
+   
+      <noframes>
+         <body>Your browser does not support frames.</body>
+      </noframes>
+      
+    </frameset>
+</html>
